@@ -40,6 +40,12 @@ app.post('/', function (req, res) {
     searchWord(req.body.value)
 })
 
+app.post('/location', function(req,res){
+    console.log(req.body)
+    res.json(req.body)
+})
+
+
 app.listen(3100, function () {
     console.log('Example app listening on port 3100!')
 })
